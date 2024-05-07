@@ -1,9 +1,10 @@
-# Football League Analysis
+# Premier League Analysis
 
-This project involves analyzing football league data, including team standings, points, goals scored, and other metrics. It utilizes the football API to fetch data for a specified range of years, processes the data using pandas, and generates visualizations to analyze team performance over time.
+This project involves analyzing football league data from the English Premier League, including team standings, points, goals scored, and other metrics. It utilizes the Football API from API Sports to fetch data for a specified range of years, processes the data using pandas, and generates visualizations to analyze team performance over time.
 
 ## Requirements
 
+- API key from https://www.api-football.com/
 - pandas
 - json
 - http.client

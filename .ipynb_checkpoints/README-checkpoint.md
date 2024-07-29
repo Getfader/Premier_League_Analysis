@@ -69,7 +69,9 @@ This project involves analyzing football league data from the English Premier Le
   - `save_path (str)`: Path to save the plot (including filename and extension).
 - Returns:
   - `None`
+  
 ![League position per season for the top 6 teams](images/top_6_positions.png)
+
 ### `plot_top_teams_points(pl, num_teams=6, figsize=(10, 6), save_path=None)`
 
 - Plots the points per season for the top N teams.
@@ -80,6 +82,8 @@ This project involves analyzing football league data from the English Premier Le
   - `save_path (str)`: Path to save the plot (including filename and extension).
 - Returns:
   - `None`
+  
+![League points per season for the top 6 teams](images/top_6_points.png)
 
 ### `plot_team_goal_difference(pl, team_name, figsize=(10, 6), save_path=None)`
 
@@ -91,6 +95,8 @@ This project involves analyzing football league data from the English Premier Le
   - `save_path (str)`: Path to save the plot (including filename and extension).
 - Returns:
   - `None`
+  
+![Goal difference per season for Liverpool FC](images/goal_difference_liverpool.png)
 
 ### `plot_team_goal_difference_and_points(pl, team_name, figsize=(10, 6), save_path=None)`
 
@@ -103,6 +109,8 @@ This project involves analyzing football league data from the English Premier Le
 - Returns:
   - `None`
 
+![Goal difference and points per season for Liverpool FC](images/liverpool_goals_points.png)
+
 ### `plot_team_goals_home_away(pl, team_name, figsize=(10, 6), save_path=None)`
 
 - Plots the total goals scored and conceded per season for a specific team.
@@ -114,6 +122,8 @@ This project involves analyzing football league data from the English Premier Le
 - Returns:
   - `None`
 
+![Total goals scored and conceded per season by Manchester United](images/manu_goals_home_away.png)
+
 ### `plot_team_win_rate(pl, team_name, figsize=(8, 6), save_path=None)`
 
 - Plots the win rate for home and away games per season for a specific team.
@@ -124,6 +134,8 @@ This project involves analyzing football league data from the English Premier Le
   - `save_path (str)`: Path to save the plot (including filename and extension).
 - Returns:
   - `None`
+  
+![Winrate for home and away games per season for Everton](images/everton_winrate.png)
 
 ### `plot_team_placement_vs_points(pl, team_name, figsize=(8, 6), save_path=None)`
 
@@ -136,6 +148,8 @@ This project involves analyzing football league data from the English Premier Le
 - Returns:
   - `None`
 
+![League placement vs points for Chelsea](images/chelsea_rank_points.png)
+
 ### `plot_team_goals(pl, team_name, figsize=(10, 6), save_path=None)`
 
 - Plots the goals scored and conceded per season for a specific team.
@@ -146,6 +160,8 @@ This project involves analyzing football league data from the English Premier Le
   - `save_path (str)`: Path to save the plot (including filename and extension).
 - Returns:
   - `None`
+
+![Goals scored and conceded per season for Arsenal](images/arsenal_goals.png)
 
 ## Usage
 

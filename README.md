@@ -10,52 +10,6 @@ This project involves analyzing football league data from the English Premier Le
 - http.client
 - matplotlib
 - numpy
-
-## Functions to retrieve data and clean it
-
-### `create_dataframe(yearfrom, yearto, API_key)`
-
-- Creates a DataFrame from the standings data for a specified range of years.
-- Parameters:
-  - `yearfrom (int)`: Starting year.
-  - `yearto (int)`: Ending year.
-  - `API_key (str)`: API key for accessing the football API.
-- Returns:
-  - `df_list (list)`: List of DataFrames, each containing standings data for one season.
-
-### `split_columns(lst)`
-
-- Splits columns containing nested JSON objects into separate DataFrames and combines them with the original DataFrame.
-- Parameters:
-  - `lst (list)`: A list of pandas DataFrames where each DataFrame contains columns with nested JSON objects.
-- Returns:
-  - `list`: A list of pandas DataFrames with split columns combined with the original DataFrames.
-
-### `drop_columns(lst)`
-
-- Drops specified columns from each DataFrame in a list of DataFrames.
-- Parameters:
-  - `lst (list)`: A list of pandas DataFrames.
-- Returns:
-  - `list`: A list of pandas DataFrames with specified columns dropped.
-
-### `column_names(df_list)`
-
-- Cleans a list of DataFrames by selecting specific columns.
-- Parameters:
-  - `df_list (list)`: List of DataFrames to be cleaned.
-- Returns:
-  - `DataFrame`: The final cleaned DataFrame.
-
-### `make_big_df(df_list, fromyear, toyear)`
-
-- Concatenates DataFrames from a list into a single DataFrame and adds a 'season' column.
-- Parameters:
-  - `df_list (list)`: List of DataFrames to be concatenated.
-  - `fromyear (int)`: Starting year.
-  - `toyear (int)`: Ending year.
-- Returns:
-  - `DataFrame`: The concatenated DataFrame with a 'season' column.
   
 ## Functions to plot the data
 
@@ -149,6 +103,52 @@ This project involves analyzing football league data from the English Premier Le
   - `None`
 
 ![League placement vs points for Chelsea](images/chelsea_rank_points.png)
+
+## Functions to retrieve data and clean it
+
+### `create_dataframe(yearfrom, yearto, API_key)`
+
+- Creates a DataFrame from the standings data for a specified range of years.
+- Parameters:
+  - `yearfrom (int)`: Starting year.
+  - `yearto (int)`: Ending year.
+  - `API_key (str)`: API key for accessing the football API.
+- Returns:
+  - `df_list (list)`: List of DataFrames, each containing standings data for one season.
+
+### `split_columns(lst)`
+
+- Splits columns containing nested JSON objects into separate DataFrames and combines them with the original DataFrame.
+- Parameters:
+  - `lst (list)`: A list of pandas DataFrames where each DataFrame contains columns with nested JSON objects.
+- Returns:
+  - `list`: A list of pandas DataFrames with split columns combined with the original DataFrames.
+
+### `drop_columns(lst)`
+
+- Drops specified columns from each DataFrame in a list of DataFrames.
+- Parameters:
+  - `lst (list)`: A list of pandas DataFrames.
+- Returns:
+  - `list`: A list of pandas DataFrames with specified columns dropped.
+
+### `column_names(df_list)`
+
+- Cleans a list of DataFrames by selecting specific columns.
+- Parameters:
+  - `df_list (list)`: List of DataFrames to be cleaned.
+- Returns:
+  - `DataFrame`: The final cleaned DataFrame.
+
+### `make_big_df(df_list, fromyear, toyear)`
+
+- Concatenates DataFrames from a list into a single DataFrame and adds a 'season' column.
+- Parameters:
+  - `df_list (list)`: List of DataFrames to be concatenated.
+  - `fromyear (int)`: Starting year.
+  - `toyear (int)`: Ending year.
+- Returns:
+  - `DataFrame`: The concatenated DataFrame with a 'season' column.
 
 ## Usage
 

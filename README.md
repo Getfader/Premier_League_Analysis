@@ -150,19 +150,6 @@ This project involves analyzing football league data from the English Premier Le
 
 ![League placement vs points for Chelsea](images/chelsea_rank_points.png)
 
-### `plot_team_goals(pl, team_name, figsize=(10, 6), save_path=None)`
-
-- Plots the goals scored and conceded per season for a specific team.
-- Parameters:
-  - `pl (DataFrame)`: DataFrame containing the league position data.
-  - `team_name (str)`: Name of the team to plot the data for.
-  - `figsize (tuple)`: Figure size (width, height) in inches.
-  - `save_path (str)`: Path to save the plot (including filename and extension).
-- Returns:
-  - `None`
-
-![Goals scored and conceded per season for Arsenal](images/arsenal_goals.png)
-
 ## Usage
 
 1. Set up your API key for accessing the football API.
